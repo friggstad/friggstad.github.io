@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Zachary Friggstad's Academic Page</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="extra.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+  <!--  NAVIGATION BAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="index.html">Zachary Friggstad</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="publications.html">Publications</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="teaching.html">Teaching</a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link" href="students.html">Students</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="cmput403_info.html">CMPUT 403<span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- END NAVIGATION BAR -->
+
+  <div class="container top30">
+    <div class="row top30">
+      <div class="col-10">
+        <h2>CMPUT 403 - Practical Algorithmics</h2>
+
+        <p>
+          I frequently get asked what this course is about. The
+          <a href="https://www.ualberta.ca/computing-science/undergraduate-studies/course-directory/courses/practical-algorithms.html" target = "_blank">
+          university calendar description</a> is a bit cryptic.
+        </p>
+
+        <p>
+          This course was born from an individual study in problem solving for programming contests.
+          But interest has grown quite a bit, in part due to the fact that many interviews
+          have a problem solving and/or coding component. The assignments also give you extensive
+          experience with both coding and debugging (in addition to problem solving).
+        </p>
+
+        <p>
+          This course retains the "individual study" feel in the following sense:
+          lecture content is not as in-depth with particular topics as, say, CMPUT 304.
+          Rather, you are pointed to information on various algorithms and problem solving paradigms
+          and it is understood that you will use this information to help solve problems.
+          Our meeting times are restricted to only 2 hours/week where the focus of the in-class
+          discussions will be highlighting key aspects of the weekly topic I find useful
+          and examples of how to solve a few particular problems related to the topic.
+        </p>
+
+        <h3>Nature of the Course Work</h3>
+        <p>
+          <i>Comment: The information below is tailored to how I run the course.
+            Other instructors run the course in a similar manner, but there may
+            be deviations.</i>
+        </p>
+        <p>
+          Primarily, you will be solving problems. This means you read a description,
+          design an efficient-enough algorithm to solve the problem, implement it,
+          and have it "accepted" by an automated judging platform that tests your solution
+          on some hidden data (that conforms to the problem specification).
+        </p>
+
+        <p>
+          If you don't really know what that means, go to <a href="https://open.kattis.com/" target="_blank">Open Kattis</a>,
+          create an account, and try to solve some very easy problems (difficulty at most 2.0). Make sure you "submit" your solution
+          to see the judgement. Notice: it is <b>all or nothing</b>. If you don't pass all test cases, it is not "accepted".
+        </p>
+
+        <p>
+          You will do this time after time after time in CMPUT 403 on a Kattis site (like Open Kattis but tailored for U of A courses). There will be weekly problem sets consisting of 3-4 problems
+          (apart from the first week, which has quite a bit more but most are easy). If you get it "accepted" before the deadline, you get full marks.
+          There are no partial marks for an incorrect solution, the only partial marks you may earn are with late submissions (according to the course outline).
+        </p>
+
+        <h3>Programming Language</h3>
+        <p>
+          There are 2 facets to this topic:
+          <ul>
+            <li>The official language of <b>instruction</b> is C++.
+              That is, all sample code I present during the lectures and posted to eClass is in C++.
+              This is because C++ strikes the right balance between
+              efficiency and versatility (eg. it is usually as fast or nearly as fast as C
+              but the standard template library contains many indispensible data structures and algorithms).</li><br>
+            <li>You may still solve problems in any language supported by <a href="https://open.kattis.com/" target="_blank">Open Kattis</a> which includes Python3 and Java.<br><br>
+              <b>Caveats</b>: Python3 typically runs 2x - 3x slower than C++. The site uses the Python3 interpreter pypy3 which is usually <b>much</b>
+              more efficient than cpython, but still slower than C++. In some cases, it can run much slower than C++; I have seen running times of 15x slower than C++ even though the implementations look identical apart from
+              the obvious language differences. Java is also noticeably slower than C++.
+              The majority of problems issued in CMPUT 403 can be solved by Python or Java. But occasionally there are problems that are frustrating to solve in these languages.
+              You can always view the statistics page for a problem to see how successful Python or Java submissions tend to be.
+          </ul>
+          <p>
+            To get the most learning out of this course, I encourage you to use C++. It is not required, many students succeed just using Python or Java.
+            But learning to use C++ effectively will expand your coding abilities. If you want to get some practice, learn how to use
+            the data structures and algorithms in the Standard Template Library (eg. linked lists, queues, vectors, priority_queue, set, map, unordered_set, unordered_map,
+            sort() function, and spend time getting used to iterators in the STL).
+          </p>
+        </p>
+
+        <h3>Background</h3>
+        <p>
+          The formal prerequisites are CMPUT 204 and at least one 300-level (or above) CMPUT.
+          The point of asking for at least one 300-level CMPUT course is to encourage you to take CMPUT 403
+          sometime later in your studies. Unless you are an active member of the programming club,
+          you may struggle with the workload in this course more in your earlier years of study.
+        </p>
+        <p>
+          Some algorithms used in this course are taught in CMPUT 304, but you can pick them up during the readings.
+          Students who have not taken CMPUT 304 tend to spend extra time learning about <a href="https://cp-algorithms.com/graph/edmonds_karp.html">network flow</a>
+          and <a href="https://cp-algorithms.com/graph/kuhn_maximum_bipartite_matching.html">bipartite matching</a>, so if you plan on taking this course you can consider
+          this something to brush up on (it will appear later in the course as one of the more advanced topics).
+        </p>
+        <p>
+          To emphasize, it is strongly encouraged that you wait until your 3rd or 4th year of studies before taking this course
+          unless you already have extensive experience solving problems of this nature (eg. if you participate in programming contests
+          like Google Kickstart / Code Jam, ICPC, etc.)
+        </p>
+        <p>
+          Math topics that pop up include (but are not necessarily limited too):
+          <ul>
+            <li>Solving a system of equations: Gaussian Elimination.</li>
+            <li>Matrices, especially multiplication.</li>
+            <li>Basics of modular arithmetic. You should know what "arithmetic mod m" means where m is a positive integer.
+              <a href="https://cp-algorithms.com/algebra/module-inverse.html">Modular inverses</a> are discussed as well
+              (we will discuss the method using the Extended Euclidean Algorithm).</li>
+            <li>The basics of prime numbers and prime factorization. Nothing too in-depth.</li>
+            <li>Basic geometry, it is all elementary (eg. how to represent the line between 2 points,
+              how to compute the intersection points of 2 circles, etc.).</li>
+            <li>Dot products and cross products in 2D: simple applications.</li>
+            <li>There are other small topics, but this should give you an idea of what we will see.</li>
+          </ul>
+          In some sense, everything we do as problem solvers is "math". I guess I'm just giving a list
+          of topics that typically do not appear in our algorithms courses.
+
+        </p>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

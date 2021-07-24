@@ -1,0 +1,33 @@
+@media (min-width: 993px) {
+  .navbar .navbar-nav .nav-item .nav-link {
+    padding: 0 0.5em;
+  }
+  .navbar .navbar-nav .nav-item:not(:last-child) .nav-link {
+    border-right: 2px solid #ffffff;
+  }
+}
+
+.divider-vertical {
+  padding: 0 0.5em;
+  border-right: 2px solid #ffffff;
+}
+
+.top3 { margin-top:3px; }
+.top5 { margin-top:5px; }
+.top7 { margin-top:7px; }
+.top10 { margin-top:10px; }
+.top15 { margin-top:15px; }
+.top17 { margin-top:17px; }
+.top30 { margin-top:30px; }
+
+.bot2 { margin-bottom:2px; }
+
+
+.container {
+  max-width: 80%;
+}
+
+.img-max {
+  max-width: 250px;
+  width:100%;
+}
