@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>Zachary Friggstad's Academic Page</title>
+  <title>CMPUT 403 Information Page</title>
+  <link rel="icon" type="image/png" href="img/favicon.png">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -47,6 +48,20 @@
         <h2>CMPUT 403 - Practical Algorithmics</h2>
 
         <p>
+          <i>Comment: The information below is tailored to how I run the course.
+            Other instructors run the course in a similar manner, but there may
+            be deviations.</i>
+        </p>
+
+        <p>
+          <b>Note</b>: No part of this should be taken as official (i.e. not part of the course outline).
+          This is just an information page that is subject to change at any time and may
+          disagree with a current offering of CMPUT 403.
+        </p>
+
+        <h3>What Is This Course?</h3>
+
+        <p>
           I frequently get asked what this course is about. The
           <a href="https://www.ualberta.ca/computing-science/undergraduate-studies/course-directory/courses/practical-algorithms.html" target = "_blank">
           university calendar description</a> is a bit cryptic.
@@ -55,7 +70,8 @@
         <p>
           This course was born from an individual study in problem solving for programming contests.
           But interest has grown quite a bit, in part due to the fact that many interviews
-          have a problem solving and/or coding component. The assignments also give you extensive
+          have a problem component: the famous "interview questions". Others like this course because
+          the myriad of coding assignments help develop
           experience with both coding and debugging (in addition to problem solving).
         </p>
 
@@ -64,34 +80,40 @@
           lecture content is not as in-depth with particular topics as, say, CMPUT 304.
           Rather, you are pointed to information on various algorithms and problem solving paradigms
           and it is understood that you will use this information to help solve problems.
+        </p>
+
+        <p>
           Our meeting times are restricted to only 2 hours/week where the focus of the in-class
-          discussions will be highlighting key aspects of the weekly topic I find useful
-          and examples of how to solve a few particular problems related to the topic.
+          discussions will be highlighting key aspects of the weekly topic.
+          You are encouraged to also attend out <a href="https://webdocs.cs.ualberta.ca/~contest/">Programming Club</a>
+          meetings where similar problems are discussed, but this is not required.
         </p>
 
         <h3>Nature of the Course Work</h3>
-        <p>
-          <i>Comment: The information below is tailored to how I run the course.
-            Other instructors run the course in a similar manner, but there may
-            be deviations.</i>
-        </p>
+
         <p>
           Primarily, you will be solving problems. This means you read a description,
-          design an efficient-enough algorithm to solve the problem, implement it,
-          and have it "accepted" by an automated judging platform that tests your solution
+          design an efficient algorithm to solve the problem, implement it,
+          and have it <font color="green"><b>ACCEPTED</b></font> by an automated judging platform that tests your solution
           on some hidden data (that conforms to the problem specification).
         </p>
 
         <p>
-          If you don't really know what that means, go to <a href="https://open.kattis.com/" target="_blank">Open Kattis</a>,
-          create an account, and try to solve some very easy problems (difficulty at most 2.0). Make sure you "submit" your solution
+          If you don't know what that means, go to <a href="https://open.kattis.com/" target="_blank">Open Kattis</a>,
+          create an account, and try to solve some very easy problems. You can sort the problems by difficulty by clicking on the column header on the Problems page. Make sure you "submit" your solution
           to see the judgement. Notice: it is <b>all or nothing</b>. If you don't pass all test cases, it is not "accepted".
         </p>
 
         <p>
-          You will do this time after time after time in CMPUT 403 on a Kattis site (like Open Kattis but tailored for U of A courses). There will be weekly problem sets consisting of 3-4 problems
-          (apart from the first week, which has quite a bit more but most are easy). If you get it "accepted" before the deadline, you get full marks.
-          There are no partial marks for an incorrect solution, the only partial marks you may earn are with late submissions (according to the course outline).
+          You will do this time after time after time in CMPUT 403 on a Kattis tailored for U of A courses. There will be weekly problem sets consisting usually of 3-4 problems,
+          the first week is an exception because you solve more (6 or 7) but most are on the easy side. If you get a problem "accepted" before the deadline, you get full marks.
+          There are no partial marks for an incorrect solution, the only partial marks you may earn are with late submissions (according to the course outline). You have 2 weeks
+          to complete each problem set and a new set is released each week, which means in general there are 2 active problem sets at any given time.
+        </p>
+
+        <p>
+          There will likely be a final project instead of a final exam. This will involve you selecting an algorithm that is more involved than what we usually talk about
+          during the weekly topics and providing a complete implementation that I can easily run on my machine.
         </p>
 
         <h3>Programming Language</h3>
@@ -99,42 +121,44 @@
           There are 2 facets to this topic:
           <ul>
             <li>The official language of <b>instruction</b> is C++.
-              That is, all sample code I present during the lectures and posted to eClass is in C++.
-              This is because C++ strikes the right balance between
-              efficiency and versatility (eg. it is usually as fast or nearly as fast as C
-              but the standard template library contains many indispensible data structures and algorithms).</li><br>
-            <li>You may still solve problems in any language supported by <a href="https://open.kattis.com/" target="_blank">Open Kattis</a> which includes Python3 and Java.<br><br>
+              That is, all sample code I present during the lectures and posted to eClass is written in C++.
+              I prefer C++ because it strikes the right balance between
+              efficiency and versatility. It is usually as fast or nearly as fast as C or other lower-level languages,
+              but the standard template library contains many indispensible data structures and algorithms not available
+              in the standard library of C.</li>
+            <li>You may still solve problems in any language supported by <a href="https://open.kattis.com/" target="_blank">Open Kattis</a> which includes Python3 and Java.<br>
               <b>Caveats</b>: Python3 typically runs 2x - 3x slower than C++. The site uses the Python3 interpreter pypy3 which is usually <b>much</b>
               more efficient than cpython, but still slower than C++. In some cases, it can run much slower than C++; I have seen running times of 15x slower than C++ even though the implementations look identical apart from
               the obvious language differences. Java is also noticeably slower than C++.
               The majority of problems issued in CMPUT 403 can be solved by Python or Java. But occasionally there are problems that are frustrating to solve in these languages.
-              You can always view the statistics page for a problem to see how successful Python or Java submissions tend to be.
+              You can always view the statistics page for a problem to see how successful Python or Java submissions tend to be (eg. <a href="https://open.kattis.com/problems/minibattleship/statistics">this page for the problem Mini Battleship</a>).<br>
           </ul>
           <p>
             To get the most learning out of this course, I encourage you to use C++. It is not required, many students succeed just using Python or Java.
-            But learning to use C++ effectively will expand your coding abilities. If you want to get some practice, learn how to use
-            the data structures and algorithms in the Standard Template Library (eg. linked lists, queues, vectors, priority_queue, set, map, unordered_set, unordered_map,
-            sort() function, and spend time getting used to iterators in the STL).
+            But learning to use C++ effectively will expand your coding abilities. If you want to practice beforehand, I recommend you learn how to use
+            the data structures and algorithms in the Standard Template Library. For example: linked lists, queues, vectors, priority_queue, set, map, unordered_set, unordered_map,
+            sort() function, and spend time getting used to iterators in the STL. Also, get used to the I/O stream model used in C++ (eg. cin and cout) as it is quite different
+            than the line-by-line input approach taken by Python.
           </p>
         </p>
 
         <h3>Background</h3>
         <p>
-          The formal prerequisites are CMPUT 204 and at least one 300-level (or above) CMPUT.
+          The formal prerequisites are CMPUT 204 and at least one 300-level (or above) CMPUT course.
           The point of asking for at least one 300-level CMPUT course is to encourage you to take CMPUT 403
-          sometime later in your studies. Unless you are an active member of the programming club,
-          you may struggle with the workload in this course more in your earlier years of study.
+          sometime later in your studies. Unless you are an active member of the programming club or participate in
+          contests like <a href="https://codingcompetitions.withgoogle.com/codejam">Google Code Jam</a> / <a href="https://codingcompetitions.withgoogle.com/kickstart">Kickstart</a>, <a href="https://icpc.global/">ICPC</a>, <a href="https://codeforces.com/">Codeforces</a>, etc,
+          you may struggle to keep up with the workload in this course more in your earlier years of study.
         </p>
         <p>
           Some algorithms used in this course are taught in CMPUT 304, but you can pick them up during the readings.
           Students who have not taken CMPUT 304 tend to spend extra time learning about <a href="https://cp-algorithms.com/graph/edmonds_karp.html">network flow</a>
-          and <a href="https://cp-algorithms.com/graph/kuhn_maximum_bipartite_matching.html">bipartite matching</a>, so if you plan on taking this course you can consider
-          this something to brush up on (it will appear later in the course as one of the more advanced topics).
+          and <a href="https://cp-algorithms.com/graph/kuhn_maximum_bipartite_matching.html">bipartite matching</a>, so you can read up on these topics ahead of time if you wish.
+          They will appear in the latter half of the course.
         </p>
         <p>
           To emphasize, it is strongly encouraged that you wait until your 3rd or 4th year of studies before taking this course
-          unless you already have extensive experience solving problems of this nature (eg. if you participate in programming contests
-          like Google Kickstart / Code Jam, ICPC, etc.)
+          unless you already have extensive experience solving problems of this nature.
         </p>
         <p>
           Math topics that pop up include (but are not necessarily limited too):
@@ -150,9 +174,65 @@
             <li>Dot products and cross products in 2D: simple applications.</li>
             <li>There are other small topics, but this should give you an idea of what we will see.</li>
           </ul>
-          In some sense, everything we do as problem solvers is "math". I guess I'm just giving a list
+          In some sense, everything we do as problem solvers is "math". I suppose I am just giving an impression
           of topics that typically do not appear in our algorithms courses.
+        </p>
 
+        <h3>Textbook</h3>
+        <p>
+          There is no required textbook, but there is a highly-suggested book.
+          <a href="https://cpbook.net/details?cp=4">Competitive Programming 4</a> (both "books",
+          so you get all of Chapters 1 - 9). The sequence of topics in CMPUT 403 loosely follows this book and
+          the book contains excellent additional problem suggestions from a spectrum of difficulties.
+        </p>
+        <p>
+          The bookstore will adopt this book, but they will ask students
+          to pre-register for a copy or else there will be a shipping delay.
+          I will email all students registered for the course once the bookstore
+          starts taking orders. Alternatively, you can just order your own copy
+          directly from the site. Expect a few weeks for shipping.
+        </p>
+        <p>
+          I strongly recommend the 4th edition.
+          The 3rd edition will not be quite as nice. A few new topics appear in the 4th edition
+          and they expanded the list of suggested problems to include problems from
+          <a href="https://open.kattis.com/">Kattis</a>, which will be the platform used
+          in CMPUT 403.
+        </p>
+
+
+        <h3>Is This Course Right For You?</h3>
+        <p>
+          Be prepared to spend many hours coding and debugging each week, especially if you do not have
+          programming club experience. Note: only some students in CMPUT 403 are active members
+          of the programming club. You will be among many peers if you do not have this background.
+        </p>
+        <p>
+          The topics in this course change rapidly. One week, you are solving geometry problems.
+          Then the next week, you might be solving problems in combinatorics. Then string algorithms.
+          Then graph algorithms. Then data structures.
+          This can be jarring for some.
+        </p>
+        <p>
+          Are you self-motivated to read up on topics you might not be familiar with? You will do this a lot.
+        </p>
+        <p>
+          If you want a more hands-on impression of the sort of problems we will encounter,
+          here are a few samples along with my opinion on their
+          diffulty compared with the average problem issued in CMPUT 403.
+          <ul>
+            <li><a href="https://open.kattis.com/problems/delimitersoup">Delimiter Soup</a> (very easy)</li>
+            <li><a href="https://open.kattis.com/problems/froshweek2">Frosh Week 2</a> (easy)</li>
+            <li><a href="https://open.kattis.com/problems/importspaghetti">Import Spaghetti</a> (normal, graph algorithm)</li>
+            <li><a href="https://open.kattis.com/problems/spiderman">Spiderman's Workout</a> (normal, dynamic programming)</li>
+          </ul>
+          Don't just solve these in your head: implement them and get them accepted on the online judge! For example, "Import Spaghetti" is
+          not so hard conceptually but you have to get a few implementation details just right in order to have it accepted.
+          Working through these will give you a very strong impression of the sort of work you can expect in this course.
+        </p>
+
+        <p>
+          Of course, you can contact me for more information on this course if you have further questions.
         </p>
 
       </div>
