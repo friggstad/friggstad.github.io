@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <title>CMPUT 403 Information Page</title>
+  <title>CMPUT 303/403 Information Page</title>
   <link rel="icon" type="image/png" href="img/favicon.png">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -26,7 +26,7 @@
           <a class="nav-link" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="publications.html">Publications</a>
+          <a class="nav-link" href="https://dblp.org/pid/27/5737.html" target="_blank">Publications</a>
         </li>
         <li class="nav-item">
           <a class="nav-link" href="teaching.html">Teaching</a>
@@ -45,67 +45,49 @@
   <div class="container top30">
     <div class="row top30">
       <div class="col-10">
-        <h2>CMPUT 403 - Practical Algorithmics</h2>
+        <h2>CMPUT 303/403 - Practical Algorithmics / Algorithmics in Competitive Programming</h2>
 
-        <p>
-          <b>Sabbatical Notice</b>: I will be taking a sabbatical from July 2024 - June 2025. So CMPUT 303/403 will
-          likely not be offered in the 2024/25 academic year. I realize this is very disappointing for many students.
-          I am hopeful that we can offer an even bigger section in the 2025/26 academic year once I am back
-          (this is not official, just my hope). Maybe I'll finally get around to cleaning this page up over my sabbatical.
-        </p>
-        <p>
-          <b>Important Note</b>: Much of this information is old. The department has recently launched CMPUT 303 which is the permanent
-          version of CMPUT 398 discussed below. I will update this information when I get a chance to do it.
-          But the essence of the course is the same: solving programming challenges!
-        </p>
+        <br>
 
         <p>
           <b>Disclaimer</b>: No part of this should be taken as official (i.e. part of the course outline).
           This is just an information page that is subject to change at any time and may
-          disagree with a current offering of CMPUT 403.
+          disagree with a current offering of CMPUT 303/403.
           The information below is tailored to how I run the course. Other instructors run the course in a similar manner, but there may
           be deviations.
         </p>
 
-        <p>
-          <b>Note</b>: Some of the information is a bit out of date. I will update it again in Summer 2023 before the next offering of the course.
-        </p>
-
-        <p>
-          <b><font color="red">Announcement</font></b>: In Fall 2022,
-          the department will be piloting a 300-level trial version of this course.
-          See the bottom of this page for more information!
-        </p>
-
         <br>
 
-        <h3>What Is This Course?</h3>
+        <h3>What Are These Courses?</h3>
 
         <p>
           I frequently get asked what this course is about. The
-          <a href="https://www.ualberta.ca/computing-science/undergraduate-studies/course-directory/courses/practical-algorithms.html" target = "_blank">
-          university calendar description</a> is a bit cryptic.
+          university calendar descriptions for <a href="https://apps.ualberta.ca/catalogue/course/cmput/303">CMPUT 303</a> and <a href="https://apps.ualberta.ca/catalogue/course/cmput/303">CMPUT 403</a> are a bit cryptic.
         </p>
 
         <p>
-          This course was born from an individual study in problem solving for programming contests.
-          But interest has grown quite a bit, in part due to the fact that many interviews
+          These courses were born from an individual study in problem solving for programming contests.
+          Initially only CMPUT 403 was offered and was, at first, taken only by members of the programming club.
+          Then interest grew, in part due to the fact that many interviews
           have a problem solving component: the famous "interview questions". Others like this course because
           the myriad of coding assignments help develop
           experience with both coding and debugging (in addition to problem solving).
+          So CMPUT 303 was introduced in Fall 2022 (under the course number CMPUT 398 for the first year only) 
+          in order to provide a more accessible experience to students who do not have a programming contest background.
         </p>
 
         <p>
           This course retains the "individual study" feel in the following sense:
           lecture content is not as in-depth with particular topics as, say, CMPUT 304.
           Rather, you are pointed to information on various algorithms and problem solving paradigms
-          and it is understood that you will use this information to help solve problems.
+          and it is understood that you will adapt this information to help solve assignment problems.
+          Topics are presented on a weekly basis: one week is dynamic programming, one is graph algorithms, etc.
+          Lectures spend some time introducing a topic and related algorithms/data structures but are mostly spent
+          discussing solutions to related sample problems.
         </p>
 
         <p>
-          Our meeting times are restricted to only 2 hours/week where the focus of the in-class
-          discussions will be highlighting key aspects of the weekly topic plus some examples
-          of problems we can solve using the highlighted techniques.
           You are encouraged to also attend our <a href="https://webdocs.cs.ualberta.ca/~uapsc/">Programming Club</a>
           meetings where similar problems are discussed, but this is not required.
         </p>
@@ -128,15 +110,42 @@
         </p>
 
         <p>
-          You will do this time after time after time in CMPUT 403 on a Kattis site tailored for U of A courses. There will be weekly problem sets consisting usually of 3-4 problems,
+          You will do this time after time after time in CMPUT 303/403 on a Kattis site tailored for U of A courses. There will be weekly problem sets consisting usually of 3-4 problems,
           the first week is an exception because you solve more (6 or 7) but most are on the easy side. If you get a problem "accepted" before the deadline, you get full marks.
-          There are no partial marks for an incorrect solution, the only partial marks you may earn are with late submissions (according to the course outline). You have 2 weeks
-          to complete each problem set and a new set is released each week, which means in general there are 2 active problem sets at any given time.
+          There are no partial marks for an incorrect solution.
+          Some problems are scored in that Kattis gives partial credit for solving some data sets, but in CMPUT 303/403 you will get 0% unless you solve all data sets in which case you get 100%.
+        </p>
+        <p>
+          You have 2 weeks to complete each problem set and a new set is released each week, which means in general there are 2 active problem sets at any given time.
         </p>
 
+        <br>
+
+        <h3>CMPUT 303 / 403 Differences</h3>
         <p>
-          There will likely be a final project instead of a final exam. This will involve you selecting an algorithm that is more involved than what we usually talk about
-          during the weekly topics and providing a complete implementation that I can easily run on my machine.
+          The primary differences are the following:
+          <ul>
+            <li>CMPUT 303 students grades are based only on weekly assignments and an <i>open pool</i> of problems presented without context like in a contest (e.g. you have to decide what problem solving strategy to use). CMPUT 403 students will do this as well plus an additional project or task (details TBD).</li>
+            <li>The assignments have many problems in common between CMPUT 303 and CMPUT 403.
+              Usually (not always), the main difference is that the hardest problem in CMPUT 403 does not appear on the
+              CMPUT 303 set and the easiest problem on the CMPUT 303 set does not appear on the CMPUT 403 set.
+            </li>
+            <li>Later in the course, some advanced topics do not appear on a CMPUT 303 assignment (for example, maximum flow or the fast Fourier transform).</li>
+            <li>CMPUT 403 students will solve a few more problems in total.</li>
+          </ul>
+
+          <b>Should I take 303 or 403?</b>
+          <p>
+            CMPUT 403 is considerably more work intensive. Even though weekly assignments (often) differ in only one problem between 303/403, the harder problem can take quit a bit more time to solve.
+            CMPUT 403 is recommended only for those with a background in competitive programming and are interested in broadening their range of problem solving strategies.
+            Students who do not have a background in competitive programming are encouraged to take CMPUT 303.
+            Only some students in CMPUT 303 are active members
+            of the programming club. You will be among the significant majority in CMPUT 303 if you do not have this background.
+          </p>
+          <p>
+            <b>Caution</b>: Some students may be interested in taking CMPUT 403 even though they do not have much competitive programming experience.
+            For example, perhaps this course is helping you fulfil 4th year course requirements. This is strongly discouraged. You might want to consider different 400-level CMPUT course to fulfil your 4th-year course requirements.
+          </p>
         </p>
 
         <br>
@@ -152,26 +161,30 @@
               but the standard template library in C++ contains many indispensible data structures and algorithms not available
               in the standard library of C.</li>
             <li>You may still solve problems in any language supported by <a href="https://open.kattis.com/" target="_blank">Open Kattis</a> which includes Python3 and Java.<br><br>
-              <b>Caveats</b>: Python3 typically runs 2x - 3x slower than C++. The site uses the Python3 interpreter pypy3 which is usually <b>much</b>
+              <b>Caveats</b>: Python3 typically runs 2x - 3x slower than C++. The site uses the Python3 interpreter pypy3 which is usually
               more efficient than cpython, but still slower than C++. In some cases, it can run much slower than C++; I have seen running times of 15x slower than C++ even though the implementations look identical apart from
               the obvious language differences. Java is also noticeably slower than C++.
-              All problems issued in CMPUT 403 can be solved by Python or Java. But occasionally there are problems that are frustrating to solve in these languages.
+              All problems issued in CMPUT 303/403 can be solved by Python or Java. But occasionally there are problems that are frustrating to solve in these languages.
               You can always view the statistics page for a problem to see how successful Python or Java submissions tend to be (eg. <a href="https://open.kattis.com/problems/minibattleship/statistics">this page for the problem Mini Battleship</a>).<br>
           </ul>
           <p>
-            To get the most learning out of this course, I encourage you to use C++. It is not required, many students succeed just using Python or Java.
+            To get the most learning out of this course, I encourage you to use C++.
+            It is not required, many students succeed just using Python or Java.
             But learning to use C++ effectively will expand your coding abilities.
           </p>
           <p>
             If you want to practice C++ beforehand, I recommend you learn how to use
-            the data structures and algorithms in the Standard Template Library. For example: linked lists, queues, vectors, priority_queue, set, map, unordered_set, unordered_map,
-            and the sort() function. Spend time getting used to iterators in the STL. Also, get used to the I/O streaming model used in C++ (eg. cin and cout) as it is quite different
+            the data structures and algorithms in the Standard Template Library.
+            For example: linked lists, queues, vectors, priority_queue, set, map,
+            unordered_set, unordered_map, and the sort() function. Spend time getting
+            used to iterators in the STL. Also, get used to the I/O streaming model
+            used in C++ (eg. cin and cout) as it is quite different
             than the line-by-line input approach taken by Python.
           </p>
           <p>
-            <b>No direct instruction in C++ will be provided</b> apart from incidental comments and occasional tips.
-            This is because you are able to address the course work in Python or Java
-            if you choose. It is also because this is a 4th year computing science course.
+            <b>No direct instruction in C++ will be provided</b> apart from incidental
+            comments and occasional tips. This is why CMPUT 201 is a prerequisite, students
+            who learned C well in this course will find little trouble adapting to C++.
           </p>
         </p>
 
@@ -179,24 +192,30 @@
 
         <h3>Background</h3>
         <p>
-          The formal prerequisites are CMPUT 204 and at least one 300-level (or above) CMPUT course.
-          The point of asking for at least one 300-level CMPUT course is to encourage you to take CMPUT 403
-          sometime later in your studies. Unless you are an active member of the programming club or participate in
-          contests like <a href="https://codingcompetitions.withgoogle.com/codejam">Google Code Jam</a> / <a href="https://codingcompetitions.withgoogle.com/kickstart">Kickstart</a>, <a href="https://icpc.global/">ICPC</a>, <a href="https://codeforces.com/">Codeforces</a>, etc,
-          you may struggle to keep up with the workload in this course in your earlier years of study.
+          The formal prerequisites for CMPUT 303 are CMPUT (175 or 201) and CMPUT 204.
+          The reason for CMPUT 175/201 is so that you have already been introduced to C. CMPUT 175 currently
+          teaches C++ but CMPUT 201 does not. Still, in CMPUT 303/403 we won't use advanced features of C++:
+          it will mainly be C with classes and templates and some of the simpler features of new C++ standards like
+          range-based for loops. So students who have a strong grasp of C should have no problem quickly adapting to C++.
+          CMPUT 204 is required so that you have already seen many of the algorithmic concepts, e.g. heaps, graph searches, dynamic programming, etc.
+          But on a higher level, CMPUT 204 is required so that you know how to understand a written description of an algorithm
+          and running time analysis.
+        </p>
+        <p>
+          CMPUT 403 additionally requires a 300-level CMPUT course. This is mainly to ensure you have sufficient experience
+          in the field of Computing Science. Ideally I would also add that students should have sufficient exposure to competitive programming
+          either through actively participating in our club or in contests like the ICPC (or even past contests like Google's now-retired CodeJam).
         </p>
         <p>
           Some algorithms used in this course are taught in CMPUT 304, but you can pick them up during the readings.
-          Students who have not taken CMPUT 304 tend to spend extra time learning about <a href="https://cp-algorithms.com/graph/edmonds_karp.html">network flow</a>
+          For example, students who have not taken CMPUT 304 tend to spend extra time learning about <a href="https://cp-algorithms.com/graph/edmonds_karp.html">network flow</a>
           and <a href="https://cp-algorithms.com/graph/kuhn_maximum_bipartite_matching.html">bipartite matching</a>, so you can read up on these topics ahead of time if you wish.
-          They will appear in the latter half of the course.
+          They will appear in the latter half of the course. You will only be required to know how to use existing implementations of them and understand how their running times affect the overall running time of your solution to a problem,
+          you don't have to implement them yourselves
+          or provide proofs of correctness/running time.
         </p>
         <p>
-          To emphasize, it is strongly encouraged that you wait until your 3rd or 4th year of studies before taking this course
-          unless you already have extensive experience solving problems of this nature.
-        </p>
-        <p>
-          Math topics that pop up include but are not necessarily limited too:
+          While no MATH course is strictly required, mathematical thinking will be used at times:
           <ul>
             <li>Solving a system of equations: Gaussian Elimination.</li>
             <li>Matrices, especially multiplication.</li>
@@ -220,19 +239,17 @@
           There is no required textbook, but there is a highly-suggested book:
           <a href="https://cpbook.net/details?cp=4">Competitive Programming 4</a>.
           I recommend both "books" so you get all of Chapters 1 - 9. The sequence of topics in
-          CMPUT 403 loosely follows this book and the book contains excellent additional
+          CMPUT 303/403 loosely follows this book for most of the course and the book contains excellent additional
           problem suggestions from a spectrum of difficulties.
         </p>
         <p>
-          The bookstore will adopt this book, but they will ask students
-          to pre-register for a copy or else there will be a shipping delay.
-          I will email all students registered for the course once the bookstore
-          starts taking orders (probably late October). Alternatively, you can
-          just order your own copy directly from the site. Expect a few weeks
-          for shipping.
+          The bookstore will adopt this book, but you might want to consider ordering it on
+          your own as there is a significant markup in price.
+          Expect a few weeks for shipping. The electronic version is perfectly acceptable.
+          Again, I don't lecture directly out of the book it is just a good guide for how to think about various weekly topics.
         </p>
         <p>
-          I strongly recommend the 4th edition.
+          If you are interested in the book, I strongly recommend the 4th edition.
           The 3rd edition will not be quite as nice. A few new topics appear in the 4th edition
           and they expanded the list of suggested problems to include problems from
           <a href="https://open.kattis.com/">Kattis</a>, which will be the platform used
@@ -243,9 +260,7 @@
 
         <h3>Is This Course Right For You?</h3>
         <p>
-          Be prepared to spend many, <b>many</b> hours coding and debugging each week especially if you do not have
-          programming club experience. Note: only some students in CMPUT 403 are active members
-          of the programming club. You will be among many peers if you do not have this background.
+          Be prepared to spend many, <b>many</b> hours coding and debugging each week.
         </p>
         <p>
           The topics in this course change rapidly. One week, you are solving geometry problems.
@@ -259,7 +274,7 @@
         <p>
           If you want a more hands-on impression of the sort of problems we will encounter,
           here are a few samples along with my opinion on their
-          diffulty compared with the average problem issued in CMPUT 403.
+          difficulty compared with the average problems issued in CMPUT 303.
           <ul>
             <li><a href="https://open.kattis.com/problems/delimitersoup">Delimiter Soup</a> (very easy)</li>
             <li><a href="https://open.kattis.com/problems/froshweek2">Frosh Week 2</a> (easy)</li>
@@ -275,114 +290,6 @@
           Of course, you can contact me if you have further questions.
         </p>
 
-        <br>
-
-        <h3>
-          CMPUT 398 vs CMPUT 403
-        </h3>
-
-        <p>
-          This Fall (2022), the department will pilot a 300-level version
-          of this course: CMPUT 398. The course number will likely change in
-          future terms if we adopt this course permanently.
-        </p>
-        <p>
-          <b>Why?</b><br>
-          The majority of students who have taken CMPUT 403 did so for
-          experience with algorithmic problem solving, coding
-          and debugging and to get more familiar with C++. Another major
-          factor was to prepare for "interview questions".
-        </p>
-
-        <p>
-          While CMPUT 403 does provide this experience, it also goes
-          much deeper into niche topics that are important for competitive
-          programmers to learn but may not be of interest to many students. Thus,
-          the department is trying a 300-level version of this course.
-        </p>
-
-        <p>
-          <b>Technical Info</b><br>
-          CMPUT 398 and CMPUT 403 are <b><font color="red">antirequisites</font></b>.
-          You cannot take both for credit: you have to decide which <i>flavour</i>
-          of course you want to take. The primary reason is that there is still signficant
-          overlap in the topics and assigned questions for these courses.
-        </p>
-        <p>
-          They are also
-          <font color="red"><b>cross-listed</b></font> courses: both will meet in the same room
-          at the same time and be run by the same instructor/TA team. However, some meeting topics will be specific to CMPUT 403.
-          An announcement will be made when this is the case. CMPUT 398 students
-          are, of course, still welcome to join these meetings to see some of the topics
-          missing from CMPUT 398.
-        </p>
-        <p>
-          Due to how Beartracks works, we have to set a certain allocation for
-          CMPUT 398 and CMPUT 403. So we are going with 25 in 403 and 25 in 398.
-          If you wanted to take one version but only
-          the other one has seats, register for that version. A couple of days
-          before the add/drop deadline in the term I will ask people to
-          let me know if they want to switch to the other version and then I will
-          ask the office to do the transfer. Obviously, you cannot change
-          your mind after the add/drop deadline.
-        </p>
-
-        <p>
-          <b>Comparison: 403 vs 398</b>
-          <ul>
-            <li>
-              CMPUT 398 will not cover some of the highly-specialized topics
-              that are covered in CMPUT 403. <b>Examples</b>: solving linear programs
-              using the simplex method, the fast Fourier transform and applications,
-              some specialized data structures, advanced graph algorithms.
-            </li>
-            <li>
-              CMPUT 398 will not have a large final project. CMPUT 403 students pick
-              an algorithm or data structure that is not standard in contest
-              settings and implement it based off of pseudocode. This is a
-              time consuming end-of-term project that will not be given to CMPUT 398
-              students. CMPUT 398 students can still expect some end-of-term
-              work that is different than the weekly assignments, but not at
-              the same level of difficulty or scope as a CMPUT 403 project.
-              Details are still being determined. Neither course will have any
-              exams (no midterms, no final).
-            </li>
-            <li>
-              CMPUT 398 students will spend more time on standard topics.
-              For example, extra time will be spent on dynamic programming,
-              graph algorithms, and from-the-ground-up problems that simply
-              require you to make clever observations but may not fall under
-              a specific algorithmic keyword.
-            </li>
-            <li>
-              There will still be significant overlap in problems between the two
-              versions (403 and 398). Both courses will cover dynamic programming,
-              graph algorithms, geometry, combinatorics, some data structures,
-              string algorithms, and other topics. Many assignment problems will
-              be the same (but a number will be different).
-            </li>
-            <li>
-              Both CMPUT 403 and 398 students will solve approximately the same
-              number of problems throughout the course. CMPUT 398 students are
-              still expected to be self-motivated to solve problems on their own
-              time and to read up on new algorithmic ideas: there will still be
-              some topics in 398 that are not covered in our algorithms courses
-              (CMPUT 204 or 304). CMPUT 398 students will still spend an incredibly
-              large amount of time coding and problem solving: the assignment load
-              in this course will be much higher than in most other CMPUT courses.
-            </li>
-          </ul>
-        </p>
-
-        <p>
-          <b>TLDR</b><br>
-          CMPUT 398 will spend more time on foundational algorithmic
-          topics and not go into as much depth with niche topics as CMPUT 403.
-          CMPUT 398 will have end-of-term work but not nearly as much as CMPUT 403.
-          CMPUT 398 retains an individual study feel: students are still expected to spend considerable time
-          coding, debugging, and learning new concepts on their own (with some
-          in-class discussion). No exams in either version.
-        </p>
       </div>
     </div>
   </div>
